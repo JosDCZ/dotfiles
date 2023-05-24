@@ -1,0 +1,150 @@
+[2023-05-24 08:24:27.317][MariaDB][13][MARIADB][]
+SHOW VARIABLES LIKE 'lower_case_%'; SHOW VARIABLES LIKE 'sql_mode'
+
+[2023-05-24 08:24:27.331][MariaDB][13][MARIADB][]
+SELECT SCHEMA_NAME, DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA
+
+[2023-05-24 08:24:28.252][MariaDB][13][MARIADB][]
+SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'emplece' UNION SELECT COUNT(*) FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'emplece' UNION SELECT COUNT(*) FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'emplece'
+
+[2023-05-24 08:24:28.256][MariaDB][14][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:24:28.256][MariaDB][13][MARIADB][]
+SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'emplece' ORDER BY TABLE_SCHEMA, TABLE_TYPE
+
+[2023-05-24 08:24:28.257][MariaDB][14][MARIADB][]
+SHOW TABLE STATUS
+
+[2023-05-24 08:24:28.258][MariaDB][13][MARIADB][]
+SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'emplece' ORDER BY TABLE_SCHEMA, TABLE_NAME
+
+[2023-05-24 08:24:28.259][MariaDB][13][MARIADB][]
+SELECT DISTINCT ROUTINE_SCHEMA, ROUTINE_NAME, PARAMS.PARAMETER FROM information_schema.ROUTINES LEFT JOIN ( SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, GROUP_CONCAT(CONCAT(DATA_TYPE, ' ', PARAMETER_NAME) ORDER BY ORDINAL_POSITION SEPARATOR ', ') PARAMETER, ROUTINE_TYPE FROM information_schema.PARAMETERS GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ROUTINE_TYPE ) PARAMS ON ROUTINES.ROUTINE_SCHEMA = PARAMS.SPECIFIC_SCHEMA AND ROUTINES.ROUTINE_NAME = PARAMS.SPECIFIC_NAME AND ROUTINES.ROUTINE_TYPE = PARAMS.ROUTINE_TYPE WHERE ROUTINE_SCHEMA = 'emplece' ORDER BY ROUTINE_SCHEMA
+
+[2023-05-24 08:24:33.163][MariaDB][13][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:24:33.164][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS
+
+[2023-05-24 08:24:35.482][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS LIKE 'empleado'
+
+[2023-05-24 08:24:35.483][MariaDB][13][MARIADB][]
+SHOW CREATE TABLE `empleado` 
+
+[2023-05-24 08:24:35.484][MariaDB][13][MARIADB][]
+SHOW FULL COLUMNS FROM `empleado`
+
+[2023-05-24 08:24:35.485][MariaDB][13][MARIADB][]
+SHOW INDEX FROM `empleado`
+
+[2023-05-24 08:24:35.487][MariaDB][13][MARIADB][]
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE event_object_schema = BINARY 'emplece' AND event_object_table = BINARY 'empleado' ORDER BY event_object_table
+
+[2023-05-24 08:24:35.488][MariaDB][13][MARIADB][]
+SELECT TABLE_NAME, PARTITION_NAME, SUBPARTITION_NAME, PARTITION_METHOD, SUBPARTITION_METHOD, PARTITION_EXPRESSION, SUBPARTITION_EXPRESSION, PARTITION_DESCRIPTION, PARTITION_COMMENT, NODEGROUP, TABLESPACE_NAME FROM information_schema.PARTITIONS WHERE NOT ISNULL(PARTITION_NAME) AND TABLE_SCHEMA LIKE BINARY 'emplece' AND TABLE_NAME LIKE BINARY 'empleado' ORDER BY TABLE_NAME, PARTITION_NAME, PARTITION_ORDINAL_POSITION, SUBPARTITION_ORDINAL_POSITION
+
+[2023-05-24 08:24:35.497][MariaDB][13][MARIADB][]
+SHOW CHARACTER SET
+
+[2023-05-24 08:24:35.503][MariaDB][13][MARIADB][]
+SELECT SCHEMA_NAME, DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA
+
+[2023-05-24 08:24:35.507][MariaDB][13][MARIADB][]
+SHOW ENGINES
+
+[2023-05-24 08:24:35.507][MariaDB][13][MARIADB][]
+SELECT DISTINCT(TABLESPACE_NAME) AS TABLESPACE_NAME FROM information_schema.FILES WHERE NOT ISNULL(TABLESPACE_NAME) LIMIT 10000
+
+[2023-05-24 08:24:35.508][MariaDB][13][MARIADB][]
+SHOW CHARACTER SET
+
+[2023-05-24 08:24:35.512][MariaDB][13][MARIADB][]
+SHOW COLLATION
+
+[2023-05-24 08:34:05.473][MariaDB][13][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:34:05.474][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS
+
+[2023-05-24 08:34:16.05][MariaDB][13][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:34:16.051][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS
+
+[2023-05-24 08:34:32.88][MariaDB][13][MARIADB][]
+DROP TABLE IF EXISTS `emplece`.`empleado`;
+
+[2023-05-24 08:34:57.905][MariaDB][13][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:34:57.906][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS
+
+[2023-05-24 08:34:59.297][MariaDB][13][MARIADB][]
+SELECT * FROM `emplece`.`empleado` LIMIT 0,1000
+
+[2023-05-24 08:34:59.298][MariaDB][13][MARIADB][]
+SHOW TABLE STATUS LIKE 'empleado'
+
+[2023-05-24 08:34:59.299][MariaDB][35][MARIADB][]
+SHOW COLUMNS FROM `emplece`.`empleado`
+
+[2023-05-24 08:34:59.3][MariaDB][14][MARIADB][]
+SHOW CREATE TABLE `emplece`.`empleado`
+
+[2023-05-24 08:34:59.3][MariaDB][35][MARIADB][]
+SHOW INDEX FROM `empleado`
+
+[2023-05-24 08:34:59.3][MariaDB][13][MARIADB][]
+SHOW CREATE TABLE `empleado` 
+
+[2023-05-24 08:34:59.3][MariaDB][13][MARIADB][]
+SHOW FULL COLUMNS FROM `empleado`
+
+[2023-05-24 08:45:02.431][MariaDB][13][MARIADB][]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2023-05-24 08:45:02.458][MariaDB][13][MARIADB][]
+SELECT TABLE_NAME, CHECK_OPTION, IS_UPDATABLE, SECURITY_TYPE, DEFINER FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_SCHEMA = 'emplece' ORDER BY TABLE_NAME ASC
+
+[2023-05-24 08:45:02.638][MariaDB][13][MARIADB][]
+SHOW VARIABLES LIKE 'lower_case_%'; SHOW VARIABLES LIKE 'sql_mode'
+
+[2023-05-24 08:45:05.3][MariaDB][13][MARIADB][]
+INSERT INTO empleado (id, apellidoempleado, emailempleado, nombreempleado, puntajeempleado) VALUES
+(1, 'García', 'garcia@example.com', 'Juan', 85),
+(2, 'López', 'lopez@example.com', 'María', 92),
+(3, 'Pérez', 'perez@example.com', 'Carlos', 76),
+(4, 'Rodríguez', 'rodriguez@example.com', 'Ana', 88),
+(5, 'Martínez', 'martinez@example.com', 'Luis', 71),
+(6, 'Gómez', 'gomez@example.com', 'Laura', 95),
+(7, 'Hernández', 'hernandez@example.com', 'Pedro', 83),
+(8, 'Torres', 'torres@example.com', 'Carmen', 90),
+(9, 'Díaz', 'diaz@example.com', 'Diego', 79),
+(10, 'Sánchez', 'sanchez@example.com', 'Valentina', 87),
+(11, 'Romero', 'romero@example.com', 'Javier', 69),
+(12, 'Fernández', 'fernandez@example.com', 'Paula', 94),
+(13, 'Gutiérrez', 'gutierrez@example.com', 'Andrés', 78),
+(14, 'Vargas', 'vargas@example.com', 'Sofía', 91),
+(15, 'Ramírez', 'ramirez@example.com', 'Martín', 75),
+(16, 'Morales', 'morales@example.com', 'Isabella', 89),
+(17, 'Benítez', 'benitez@example.com', 'Gabriel', 82),
+(18, 'Acosta', 'acosta@example.com', 'Lucía', 93),
+(19, 'Silva', 'silva@example.com', 'Matías', 74),
+(20, 'Rojas', 'rojas@example.com', 'Valeria', 86),
+(21, 'Molina', 'molina@example.com', 'Federico', 77),
+(22, 'Ortega', 'ortega@example.com', 'Camila', 84),
+(23, 'Núñez', 'nunez@example.com', 'Felipe', 70),
+(24, 'Cruz', 'cruz@example.com', 'Renata', 97),
+(25, 'Rivera', 'rivera@example.com', 'Emilio', 81),
+(26, 'Cabrera', 'cabrera@example.com', 'Daniela', 99),
+(27, 'Luna', 'luna@example.com', 'Sebastián', 73),
+(28, 'Moreno', 'moreno@example.com', 'Mía', 96),
+(29, 'Álvarez', 'alvarez@example.com', 'Alejandro', 80),
+(30, 'León', 'leon@example.com', 'Julia', 98)
+

@@ -1,0 +1,64 @@
+# GENERAL SETTINGS
+# --------border-radius:--------
+set window-title-basename true
+set statusbar-home-tilde  true
+set recolor               true
+set selection-clipboard   clipboard
+set recolor-keephue       "false"
+set font "Inconsolata Condensed Bold 10"
+
+# LAYOUT SETTINGS
+# ---------------
+set show-scrollbars     false
+set statusbar-h-padding 25
+set statusbar-v-padding 7
+set show-scrollbars     false
+map i recolor
+
+# CATPPUCCIN THEME
+# ----------
+set default-fg                "#C6D0F5"
+set default-bg 			          "#303446"
+
+set completion-bg		          "#232634"
+set completion-fg		          "#C6D0F5"
+set completion-highlight-bg	  "#575268"
+set completion-highlight-fg	  "#C6D0F5"
+set completion-group-bg		    "#232634"
+set completion-group-fg		    "#8CAAEE"
+
+set statusbar-fg		          "#C6D0F5"
+set statusbar-bg		          "#232634"
+
+set notification-bg		        "#232634"
+set notification-fg		        "#C6D0F5"
+set notification-error-bg	    "#232634"
+set notification-error-fg	    "#E78284"
+set notification-warning-bg	  "#232634"
+set notification-warning-fg	  "#FAE3B0"
+
+set inputbar-fg			          "#C6D0F5"
+set inputbar-bg 		          "#232634"
+
+set recolor-lightcolor		    "#303446"
+set recolor-darkcolor		      "#C6D0F5"
+
+set index-fg			            "#C6D0F5"
+set index-bg			            "#303446"
+set index-active-fg		        "#C6D0F5"
+set index-active-bg		        "#232634"
+
+set render-loading-bg		      "#303446"
+set render-loading-fg		      "#C6D0F5"
+
+set highlight-color		        "#575268"
+set highlight-fg              "#F4B8E4"
+set highlight-active-color	  "#F4B8E4"
+
+set recolor                     "true"
+set recolor-keephue             "false"
+
+
+
+
+

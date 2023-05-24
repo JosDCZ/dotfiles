@@ -1,0 +1,131 @@
+sw_volume: 100
+audio_device_state:1:My Pulse Output
+audio_device_state:1:mpd_visualizer
+state: pause
+current: 61
+time: 234.448000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:EPICA-The Phantom Agony/01 - Adyta (The Neverending Embrace).mp3
+1:EPICA-The Phantom Agony/02 - Sensorium.mp3
+2:EPICA-The Phantom Agony/03 - Cry For The Moon (The Embrace That Smothers - Part IV).mp3
+3:EPICA-The Phantom Agony/04 - Feint.mp3
+4:EPICA-The Phantom Agony/05 - Illusioe Consensus.mp3
+5:EPICA-The Phantom Agony/06 - Façade Of Reality (The Embrace That Smothers - Part V).mp3
+6:EPICA-The Phantom Agony/07 - Run For A Fall.mp3
+7:EPICA-The Phantom Agony/08 - Seif Al Din (The Embrace That Smothers - Part VI).mp3
+8:EPICA-The Phantom Agony/09 - The Phantom Agony.mp3
+9:EPICA-The Phantom Agony/10 - The Phantom Agony (L.E. bonus).mp3
+10:EPICA-The Phantom Agony/11 - Triumph Of Defeat (Japanese bonus).mp3
+11:EPICA-Consign To Oblivion/01 - Hunab K'u - A New Age Dawns - Prologue.mp3
+12:EPICA-Consign To Oblivion/02 - Dance Of Fate.mp3
+13:EPICA-Consign To Oblivion/03 - The Last Crusade (A New Age Dawns #1).mp3
+14:EPICA-Consign To Oblivion/04 - Solitary Ground.mp3
+15:EPICA-Consign To Oblivion/05 - Blank Infinity.mp3
+16:EPICA-Consign To Oblivion/06 - Force Of The Shore.mp3
+17:EPICA-Consign To Oblivion/07 - Quietus.mp3
+18:EPICA-Consign To Oblivion/08 - Mother Of Light (A New Age Dawns #2).mp3
+19:EPICA-Consign To Oblivion/09 - Trois Vierges.mp3
+20:EPICA-Consign To Oblivion/10 - Another Me ''In Lack'ech''.mp3
+21:EPICA-Consign To Oblivion/11 - Consign To Oblivion (A New Age Dawns #3).mp3
+22:EPICA-The Divine Conspiracy/Disc 1/01 - Indigo - Prologue.mp3
+23:EPICA-The Divine Conspiracy/Disc 1/02 - The Obsessive Devotion.mp3
+24:EPICA-The Divine Conspiracy/Disc 1/03 - Menace Of Vanity.mp3
+25:EPICA-The Divine Conspiracy/Disc 1/04 - Chasing The Dragon.mp3
+26:EPICA-The Divine Conspiracy/Disc 1/05 - Never Enough.mp3
+27:EPICA-The Divine Conspiracy/Disc 1/06 - La'petach Chatat Rovetz (The Final Embrace).mp3
+28:EPICA-The Divine Conspiracy/Disc 1/07 - Death Of A Dream (The Embrace That Smothers, Part VII).mp3
+29:EPICA-The Divine Conspiracy/Disc 1/08 - Living A Lie (The Embrace That Smothers, Part VIII).mp3
+30:EPICA-The Divine Conspiracy/Disc 1/09 - Fools Of Damnation (The Embrace That Smothers, Part IX).mp3
+31:EPICA-The Divine Conspiracy/Disc 1/10 - Beyond Belief.mp3
+32:EPICA-The Divine Conspiracy/Disc 1/11 - Safeguard To Paradise.mp3
+33:EPICA-The Divine Conspiracy/Disc 1/12 - Sancta Terra.mp3
+34:EPICA-The Divine Conspiracy/Disc 1/13 - The Divine Conspiracy.mp3
+35:EPICA-The Divine Conspiracy/Disc 2/01 - Higher High.mp3
+36:EPICA-The Divine Conspiracy/Disc 2/02 - Replica (Fear Factory Cover).mp3
+37:EPICA-Design Your Universe/01 - Samadhi (Prelude).mp3
+38:EPICA-Design Your Universe/02 - Resign To Surrender (A New Age Dawns - Part IV).mp3
+39:EPICA-Design Your Universe/03 - Unleashed.mp3
+40:EPICA-Design Your Universe/04 - Martyr Of The Free Word.mp3
+41:EPICA-Design Your Universe/05 - Our Destiny.mp3
+42:EPICA-Design Your Universe/06 - Kingdom Of Heaven (A New Age Dawns - Part V).mp3
+43:EPICA-Design Your Universe/07 - The Price Of Freedom (Interlude).mp3
+44:EPICA-Design Your Universe/08 - Burn To A Cinder.mp3
+45:EPICA-Design Your Universe/09 - Tides Of Time.mp3
+46:EPICA-Design Your Universe/10 - Deconstruct.mp3
+47:EPICA-Design Your Universe/11 - Semblance Of Liberty.mp3
+48:EPICA-Design Your Universe/12 - White Waters.mp3
+49:EPICA-Design Your Universe/13 - Design Your Universe (A New Age Dawns - Part VI).mp3
+50:EPICA-Design Your Universe/14 - Incentive (L.E. bonus).mp3
+51:EPICA-Design Your Universe/15 - Nothing's Wrong (Bonus Track).mp3
+52:EPICA-Requiem For The Indifferent/01 - Karma.mp3
+53:EPICA-Requiem For The Indifferent/02 - Monopoly On Truth.mp3
+54:EPICA-Requiem For The Indifferent/03 - Storm The Sorrow.mp3
+55:EPICA-Requiem For The Indifferent/04 - Delirium.mp3
+56:EPICA-Requiem For The Indifferent/05 - Internal Warfare.mp3
+57:EPICA-Requiem For The Indifferent/06 - Requiem For The Indifferent.mp3
+58:EPICA-Requiem For The Indifferent/07 - Anima.mp3
+59:EPICA-Requiem For The Indifferent/08 - Guilty Demeanor.mp3
+60:EPICA-Requiem For The Indifferent/09 - Deep Water Horizon.mp3
+61:EPICA-Requiem For The Indifferent/10 - Stay The Course.mp3
+62:EPICA-Requiem For The Indifferent/11 - Deter The Tyrant.mp3
+63:EPICA-Requiem For The Indifferent/12 - Avalanche.mp3
+64:EPICA-Requiem For The Indifferent/13 - Serenade Of Self-Destruction.mp3
+65:EPICA-Requiem For The Indifferent/14 - Nostalgia.mp3
+66:EPICA-Requiem For The Indifferent/15 - Twin Flames.mp3
+67:EPICA-The Quantum Enigma/Disc 1/01 - Originem.mp3
+68:EPICA-The Quantum Enigma/Disc 1/02 - The Second Stone.mp3
+69:EPICA-The Quantum Enigma/Disc 1/03 - The Essence Of Silence.mp3
+70:EPICA-The Quantum Enigma/Disc 1/04 - Victims Of Contingency.mp3
+71:EPICA-The Quantum Enigma/Disc 1/05 - Sense Without Sanity - The Impervious Code -The Impervious Code-.mp3
+72:EPICA-The Quantum Enigma/Disc 1/06 - Unchain Utopia.mp3
+73:EPICA-The Quantum Enigma/Disc 1/07 - The Fifth Guardian - Interlude -.mp3
+74:EPICA-The Quantum Enigma/Disc 1/08 - Chemical Insomnia.mp3
+75:EPICA-The Quantum Enigma/Disc 1/09 - Reverence - Living in the Heart -.mp3
+76:EPICA-The Quantum Enigma/Disc 1/10 - Omen - The Ghoulish Malady -.mp3
+77:EPICA-The Quantum Enigma/Disc 1/11 - Canvas Of Life.mp3
+78:EPICA-The Quantum Enigma/Disc 1/12 - Natural Corruption.mp3
+79:EPICA-The Quantum Enigma/Disc 1/13 - The Quantum Enigma - Kingdom Of Heaven part II -.mp3
+80:EPICA-The Quantum Enigma/Disc 1/14 - In All Conscience (Additional Track).mp3
+81:EPICA-The Quantum Enigma/Disc 1/15 - Dreamscape (Earbook Deluxe Bonus track).mp3
+82:EPICA-The Quantum Enigma/Disc 1/16 - Miracle Of Verity (Japanese Bonus track).mp3
+83:EPICA-The Holographic Principle/1- The Holographic Principle/01 - Eidola.mp3
+84:EPICA-The Holographic Principle/1- The Holographic Principle/02 - Edge Of The Blade.mp3
+85:EPICA-The Holographic Principle/1- The Holographic Principle/03 - A Phantasmic Parade.mp3
+86:EPICA-The Holographic Principle/1- The Holographic Principle/04 - Universal Death Squad.mp3
+87:EPICA-The Holographic Principle/1- The Holographic Principle/05 - Divide And Conquer.mp3
+88:EPICA-The Holographic Principle/1- The Holographic Principle/06 - Beyond The Matrix.mp3
+89:EPICA-The Holographic Principle/1- The Holographic Principle/07 - Once Upon A Nightmare.mp3
+90:EPICA-The Holographic Principle/1- The Holographic Principle/08 - The Cosmic Algorithm.mp3
+91:EPICA-The Holographic Principle/1- The Holographic Principle/09 - Ascension - Dream State Armageddon.mp3
+92:EPICA-The Holographic Principle/1- The Holographic Principle/10 - Dancing In A Hurricane.mp3
+93:EPICA-The Holographic Principle/1- The Holographic Principle/11 - Tear Down Your Walls.mp3
+94:EPICA-The Holographic Principle/1- The Holographic Principle/12 - The Holographic Principle - A Profound Understanding Of Reality.mp3
+95:EPICA-The Holographic Principle/1- The Holographic Principle/13 - Immortal Melancholy - Piano Version - (Japan bonus).mp3
+96:Epica Vs Attack On Titan Songs (EP)/01. Crimson Bow And Arrow (Linked Horizon Cover).mp3
+97:Epica Vs Attack On Titan Songs (EP)/02. Wings Of Freedom (Linked Horizon Cover).mp3
+98:Epica Vs Attack On Titan Songs (EP)/03. If Inside These Walls Was A House (Linked Horizon Cover).mp3
+99:Epica Vs Attack On Titan Songs (EP)/04. Dedicate Your Heart! (Linked Horizon Cover).mp3
+100:Epica - 2021 - Omega (Deluxe Edition)/CD1/01 - Alpha-Anteludium.mp3
+101:Epica - 2021 - Omega (Deluxe Edition)/CD2/01 - Rivers (Acapella).mp3
+102:Epica - 2021 - Omega (Deluxe Edition)/CD2/02 - Abyss O' Time.mp3
+103:Epica - 2021 - Omega (Deluxe Edition)/CD1/02 - Abyss Of Time-Countdown To Singularity.mp3
+104:Epica - 2021 - Omega (Deluxe Edition)/CD2/03 - Omegacoustic.mp3
+105:Epica - 2021 - Omega (Deluxe Edition)/CD1/03 - The Skeleton Key.mp3
+106:Epica - 2021 - Omega (Deluxe Edition)/CD2/04 - El Codigo Vital.mp3
+107:Epica - 2021 - Omega (Deluxe Edition)/CD1/04 - Seal Of Solomon.mp3
+108:Epica - 2021 - Omega (Deluxe Edition)/CD1/05 - Gaia.mp3
+109:Epica - 2021 - Omega (Deluxe Edition)/CD1/06 - Code Of Life.mp3
+110:Epica - 2021 - Omega (Deluxe Edition)/CD1/07 - Freedom-The Wolves Within.mp3
+111:Epica - 2021 - Omega (Deluxe Edition)/CD1/08 - Kingdom Of Heaven, Part III-The Antediluvian Universe.mp3
+112:Epica - 2021 - Omega (Deluxe Edition)/CD1/09 - Rivers.mp3
+113:Epica - 2021 - Omega (Deluxe Edition)/CD1/10 - Synergize-Manic Manifest.mp3
+114:Epica - 2021 - Omega (Deluxe Edition)/CD1/11 - Twilight Reverie-The Hypnagogic State.mp3
+115:Epica - 2021 - Omega (Deluxe Edition)/CD1/12 - Omega-Sovereign Of The Sun Spheres.mp3
+playlist_end

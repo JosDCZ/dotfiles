@@ -6,8 +6,8 @@ follow = mouse
 width = 300
 height = 80
 origin = top-right
-offset = 23x75
-corner_radius = 0
+offset = 22x75
+corner_radius = 12
 scale = 0
 notification_limit = 0
 progress_bar = true
@@ -17,11 +17,11 @@ progress_bar_min_width = 300
 progress_bar_max_width = 300
 indicate_hidden = yes
 #transparency = 30
-separator_height = 1
+separator_height = 2
 padding = 15
 horizontal_padding = 15
 text_icon_padding = 0
-frame_width = 1
+frame_width = 2
 gap_size = 0
 separator_color = frame
 sort = yes
@@ -29,7 +29,7 @@ idle_threshold = 120
 font = Inconsolata Condensed Bold 11
 line_height = 2
 markup = full
-format = "<span font_desc='Inconsolata Condensed Bold 11' foreground='#cba6f7'>%s</span>\n%b"
+format = "<span font_desc='Inconsolata Condensed Bold 11' foreground='#7aa2f7'>%s</span>\n%b"
 #format = "<b>%s</b>\n%b"
 alignment = left
 vertical_alignment = center
@@ -58,18 +58,18 @@ enable_recursive_icon_lookup = true
 
 [urgency_low]
 timeout = 2
-background = "#11111b"
-foreground = "#cdd6f4"
-frame_color = "#cba6f7"
+background = "#1a1b26"
+foreground = "#a9b1d6"
+frame_color = "#7aa2f7"
 
 [urgency_normal]
 timeout = 5
-background = "#11111b"
-foreground = "#cdd6f4"
-frame_color = "#cba6f7"
+background = "#1a1b26"
+foreground = "#a9b1d6"
+frame_color = "#7aa2f7"
 
 [urgency_critical]
 timeout = 10
-background = "#11111b"
-foreground = "#cdd6f4"
-frame_color = "#cba6f7"
+background = "#1a1b26"
+foreground = "#a9b1d6"
+frame_color = "#7aa2f7"

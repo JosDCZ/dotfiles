@@ -16,45 +16,37 @@ set show-scrollbars     false
 map i recolor
 
 
-# CATPPUCCIN THEME
+# NORD THEME
 # ----------
-set default-fg                "#CDD6F4"
-set default-bg 			          "#1E1E2E"
+set default-bg                  "#1a1b26"
+set default-fg                  "#a9b1d6"
 
-set completion-bg		          "#11111b"
-set completion-fg		          "#CDD6F4"
-set completion-highlight-bg	  "#575268"
-set completion-highlight-fg	  "#CDD6F4"
-set completion-group-bg		    "#11111b"
-set completion-group-fg		    "#89B4FA"
+set statusbar-fg                "#a9b1d6"
+set statusbar-bg                "#16161e"
 
-set statusbar-fg		          "#CDD6F4"
-set statusbar-bg		          "#11111b"
+set inputbar-bg                 "#16161e"
+set inputbar-fg                 "#bb9af7"
 
-set notification-bg		        "#11111b"
-set notification-fg		        "#CDD6F4"
-set notification-error-bg	    "#11111b"
-set notification-error-fg	    "#F38BA8"
-set notification-warning-bg	  "#11111b"
-set notification-warning-fg	  "#FAE3B0"
+set notification-bg             "#16161e"
+set notification-fg             "#bb9af7"
 
-set inputbar-fg			          "#CDD6F4"
-set inputbar-bg 		          "#11111b"
+set notification-error-bg       "#16161e"
+set notification-error-fg       "#f7768e"
 
-set recolor-lightcolor		    "#1E1E2E"
-set recolor-darkcolor		      "#CDD6F4"
+set notification-warning-bg     "#16161e"
+set notification-warning-fg     "#ff9e64"
 
-set index-fg			            "#CDD6F4"
-set index-bg			            "#1E1E2E"
-set index-active-fg		        "#CDD6F4"
-set index-active-bg		        "#11111b"
+set highlight-color             "#e0af68"
+set highlight-active-color      "#9aa5ce"
 
-set render-loading-bg		      "#1E1E2E"
-set render-loading-fg		      "#CDD6F4"
+set completion-bg               "#16161e"
+set completion-fg               "#a9b1d6"
 
-set highlight-color		        "#575268"
-set highlight-fg              "#F5C2E7"
-set highlight-active-color	  "#F5C2E7"
+set completion-highlight-fg     "#9aa5ce"
+set completion-highlight-bg     "24283b"
+
+set recolor-lightcolor          "#1a1b26"
+set recolor-darkcolor           "#a9b1d6"
 
 set recolor                     "true"
 set recolor-keephue             "false"

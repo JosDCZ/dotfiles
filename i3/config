@@ -1,0 +1,350 @@
+# set mod
+set $mod Mod4
+
+# set font
+font pango:Inconsolata Condensed Bold 11
+
+### Shortcuts ###
+
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id bspterm
+bindsym $mod+mod1+Return exec --no-startup-id bspterm --float
+bindsym $mod+Shift+Return exec --no-startup-id bspterm --now
+bindsym $mod+Ctrl+Return exec --no-startup-id bspterm --full
+
+### Apps ###
+
+bindsym $mod+Shift+w exec --no-startup-id firefox
+bindsym $mod+Shift+f exec --no-startup-id nemo
+bindsym $mod+Shift+e exec --no-startup-id gsimplecal
+bindsym $mod+Shift+p exec --no-startup-id gpick
+bindsym $mod+Shift+c exec --no-startup-id galculator
+bindsym $mod+Shift+m exec --no-startup-id kitty -e ncmpcpp
+
+bindsym --release $mod+o exec bspcolorpicker
+
+# Mover ventanas
+
+#assign [class="firefox"] $ws2
+#assign [class="Google-chrome"] $ws2
+
+for_window [class="jetbrains-idea"] move to workspace 1, focus
+for_window [class="kitty-now"] move to workspace 1, focus
+
+for_window [class="firefox"] move to workspace 2, focus
+for_window [class="Google-chrome"] move to workspace 2, focus
+
+for_window [class="Code"] move to workspace 3, focus
+for_window [class="Geany"] move to workspace 3, focus
+for_window [class="Nemo"] move to workspace 4, focus, floating enable
+
+for_window [class="Zathura"] move to workspace 5, focus
+for_window [class="libreoffice-writer"] move to workspace 5, focus
+for_window [class="libreoffice-calc"] move to workspace 5, focus
+for_window [class="libreoffice-impress"] move to workspace 5, focus
+for_window [class="libreoffice-startcenter"] move to workspace 5, focus
+for_window [class="libreoffice"] move to workspace 5, focus
+for_window [class="*:soffice"] move to workspace 5, focus
+for_window [class="Soffice"] move to workspace 5, focus
+
+for_window [class="dolphin-emu"] move to workspace 6, focus, floating enable
+for_window [class="mpv"] move to workspace 7, focus, floating enable
+for_window [class="WebApp-YouTubeMusic4351"] move to workspace 7, focus
+for_window [class="Gimp-2.10"] move to workspace 7, focus
+for_window [class="Lxappearance"] move to workspace 8, focus, floating enable
+for_window [class="Nitrogen"] move to workspace 8, focus, floating enable
+for_window [class="Pavucontrol"] move to workspace 8, focus, floating enable
+
+# Ventanas Flotantes
+for_window [class="kitty-float"] floating enable, focus
+for_window [class="Viewnior"] floating enable, focus
+for_window [class="Gthumb"] floating enable, focus
+for_window [class="Galculator"] floating enable, focus
+for_window [class="MEGAsync"] floating enable, focus
+
+# run lockscreen
+bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/lock.sh
+
+# kill focused window
+bindsym $mod+c kill
+
+# run rofi programs
+bindsym $mod+d exec ~/.config/rofii3/launchers/type-2/launcher.sh &
+bindsym $mod+x exec ~/.config/rofii3/applets/bin/powermenu.sh &
+bindsym $mod+s exec ~/.config/rofii3/applets/bin/screenshot.sh
+bindsym $mod+m exec ~/.config/rofii3/applets/bin/apps.sh
+bindsym $mod+z exec ~/.config/rofii3/applets/bin/appasroot.sh
+
+bindsym $mod+n exec --no-startup-id networkmanager_dmenu
+bindsym $mod+a exec --no-startup-id CM_LAUNCHER=rofi clipmenu -theme /home/josue/.config/rofii3/applets/shared/clipmenu.rasi -p 'Portapapeles' &
+bindsym $mod+b exec --no-startup-id rofi-bluetooth -theme /home/josue/.config/rofii3/applets/shared/clipmenu.rasi -p 'Bluetooth'
+
+# take a screenshot
+bindsym Print exec --no-startup-id bspscreenshot --now
+bindsym $mod+Shift+Print exec --no-startup-id bspscreenshot --in10
+bindsym Shift+Print exec --no-startup-id bspscreenshot --in5
+bindsym Ctrl+Print exec --no-startup-id bspscreenshot --win
+bindsym $mod+Print exec --no-startup-id bspscreenshot --area
+
+# brightness control
+# exec_always --no-startup-id light -I
+bindsym XF86MonBrightnessUp exec --no-startup-id bspbrightness --inc &
+bindsym XF86MonBrightnessDown exec --no-startup-id bspbrightness --dec &
+
+# audio control
+bindsym XF86AudioRaiseVolume exec --no-startup-id bspvolume --inc &
+bindsym XF86AudioLowerVolume exec --no-startup-id bspvolume --dec &
+bindsym XF86AudioMute exec --no-startup-id bspvolume --toggle &
+
+# Playerctl
+bindsym XF86AudioNext exec --no-startup-id playerctl --all-players next &
+bindsym XF86AudioPrev exec --no-startup-id playerctl --all-players previous &
+bindsym XF86AudioPlay exec --no-startup-id playerctl --all-players play-pause &
+bindsym XF86AudioStop exec --no-startup-id playerctl --all-players stop &
+
+# Playerctl
+bindsym Ctrl+XF86AudioNext exec --no-startup-id mpc next &
+bindsym Ctrl+XF86AudioPrev exec --no-startup-id mpc prev &
+bindsym Ctrl+XF86AudioPlay exec --no-startup-id mpc toggle &
+bindsym Ctrl+XF86AudioStop exec --no-startup-id mpc stop &
+
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+q layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# save and restore layout with i3-resurrect
+bindsym $mod+t exec --no-startup-id i3-resurrect restore
+bindsym $mod+y exec --no-startup-id i3-resurrect save
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+Shift+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# workspaces names
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+
+# reload the configuration file
+bindsym $mod+Shift+x reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 3 px or 3 ppt
+        bindsym Down resize grow height 3 px or 3 ppt
+        bindsym Up resize shrink height 3 px or 3 ppt
+        bindsym Right resize grow width 3 px or 3 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+### BODERS ###
+
+#border width
+default_border pixel 2
+default_floating_border pixel 2
+title_align center
+
+#border colors
+# target                 title     bg    text   indicator  border
+client.focused  #c6a0f6 #c6a0f6 #24273a #c6a0f6 #c6a0f6
+client.focused_inactive #8aadf4 #8aadf4 #c6a0f6 #8aadf4 #8aadf4
+client.unfocused #494d64 #494d64 #c6a0f6 #494d64 #494d64
+client.urgent #ed8796 #ed8796 #24273a #ed8796 #ed8796
+
+### SETTINGS FOR i3 BAR ###
+
+bar {
+        mode invisible
+        tray_output none
+}
+
+### SETTINGS FOR i3-gaps ###
+
+# Set inner/outer gaps
+gaps inner 10
+gaps outer 0
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+# Incrementar los gaps en el escritorio actual
+bindsym $mod+Shift+plus gaps all current plus 5
+bindsym $mod+plus gaps inner current plus 5
+
+# Disminuir los gaps en el escritorio actual
+bindsym $mod+Shift+minus gaps inner all minus 5
+bindsym $mod+minus gaps inner current minus 5
+
+bindsym $mod+Shift+0 gaps inner all set 10
+bindsym $mod+0 gaps inner current set 10
+
+# Press $mod+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym $mod+o      mode "$mode_gaps_outer"
+        bindsym $mod+i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym $mod+plus  gaps inner current plus 5
+        bindsym $mod+minus gaps inner current minus 5
+        bindsym $mod+0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym $mod+plus  gaps outer current plus 5
+        bindsym $mod+minus gaps outer current minus 5
+        bindsym $mod+0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+###########################################################################################
+
+### Runnig apps in background ###
+
+# run xrandr
+exec_always --no-startup-id xrandr --output eDP --mode 1920x1080 --rate 60 &
+
+# run picom
+exec_always --no-startup-id picom -b --config ~/.config/picom/picomi3.conf &
+
+# run dunst
+exec --no-startup-id killall dunst &
+exec_always --no-startup-id dunst -config ~/.config/dunsti3/dunstrc &
+
+# run mpd
+exec_always --no-startup-id clipmenud &
+
+# run Portapapeles
+exec_always --no-startup-id mpd &
+
+# set wallpaper with fed
+# exec_always --no-startup-id nitrogen --restore &
+exec_always --no-startup-id feh --bg-fill "/home/josue/Imágenes/CatppuccinMachiato/girl.png"
+
+# launch polybar
+exec_always --no-startup-id ~/.config/polybari3/launch.sh &
+
+# launch systray
+exec_always --no-startup-id ~/.config/i3/systray.sh &
+
+# polkit agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# start i3lock
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/josue/.config/lock.sh --nofork
+
+# start power manager
+exec --no-startup-id killall xfce4-power-manager &
+exec_always --no-startup-id xfce4-power-manager &
+
+# Gestos touchpad
+exec_always --no-startup-id libinput-gestures-setup start &
+
+# Fix cursor
+exec_always --no-startup-id xsetroot -cursor_name left_ptr &
+
+# Keyboard layout
+exec_always --no-startup-id setxkbmap -option grp:rctrl_rshift_toggle us,latam &
+
+# Num Lock
+exec_always --no-startup-id numlockx &
+
+# start Luz Nocturna
+exec_always --no-startup-id killall redshift-gtk &
+exec_always --no-startup-id redshift-gtk &
+
+# start app
+exec_always --no-startup-id megasync &
+
+# start conky
+exec_always --no-startup-id ~/.config/conky/Kochabi3/start.sh &

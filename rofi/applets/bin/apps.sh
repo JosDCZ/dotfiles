@@ -26,7 +26,7 @@ term_cmd='kitty'
 file_cmd='nemo'
 text_cmd='geany'
 web_cmd='firefox'
-music_cmd='kitty -e ncmpcpp'
+music_cmd='kitty --class 'kitty-float' --config /home/josue/.config/kitty/kittymusic.conf -e ncmpcpp-ueberzug'
 setting_cmd='xfce4-power-manager-settings'
 
 # Options

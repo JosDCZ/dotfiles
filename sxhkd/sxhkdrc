@@ -45,7 +45,7 @@ super + b
 
 # Launch Apps
 super + shift + {f,w,e,p,c,t,m}
-	{nemo,firefox,gsimplecal,gpick,galculator,thunderbird,kitty -e ncmpcpp}
+	{nemo,firefox,gsimplecal,gpick,galculator,thunderbird,kitty --class 'kitty-float' --config ~/.config/kitty/kittymusic.conf -e ncmpcpp-ueberzug}
 
 # Terminal Apps
 ctrl + alt + {v,h}
@@ -86,14 +86,17 @@ super + Print
 # Brighness control
 XF86MonBrightness{Up,Down}
 	bspbrightness{ --inc, --dec}
+	#light {-A,-U} 5
 	
 # Speaker Volume control
 XF86Audio{RaiseVolume,LowerVolume}
 	bspvolume{ --inc, --dec}
+	#amixer -D pulse sset Master {5%+, 5%-}
 
 # Mic Volume control
-XF86Audio{Mute,MicMute}
-	bspvolume{ --toggle, --toggle-mic}
+XF86AudioMute
+	bspvolume --toggle
+	#pulsemixer --toggle-mute
 	
 # Music control
 ctrl + XF86Audio{Next,Prev,Play,Stop}
@@ -199,5 +202,14 @@ super + j
 super + k
 	bsp-layout remove
 
+# Change size tiled
+super + equal
+	bspc config window_gap $(($(bspc config window_gap) + 5))
+
+super + minus
+	bspc config window_gap $(($(bspc config window_gap) - 5))
+
+super + 0
+	bspc config window_gap 10
 	
 ##---------- EOF ----------##

@@ -8,7 +8,7 @@ set clipboard+=unnamedplus
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -18,18 +18,20 @@ call plug#end()
 " Color scheme
 set termguicolors
 
-colorscheme tokyonight
+syntax on
+
+colorscheme catppuccin-mocha
 
 " Unicode symbols for the Status Line
-"let g:airline_left_alt_sep = "\ue0b5"
-"let g:airline_left_sep = "\ue0b4"
-"let g:airline_right_alt_sep = "\ue0b7"
-"let g:airline_right_sep = "\ue0b6"
+let g:airline_left_alt_sep = "\ue0b5"
+let g:airline_left_sep = "\ue0b4"
+let g:airline_right_alt_sep = "\ue0b7"
+let g:airline_right_sep = "\ue0b6"
 
 " configuracion de airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = "tokyonight"
+let g:airline_theme = "catppuccin"
 
 " NERDTREE Configuracion
 let NERDTreeQuitOnOpen=1

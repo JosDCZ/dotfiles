@@ -91,7 +91,7 @@ confirm_run () {
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		#betterlockscreen -l
-		sleep 0.2
+		sleep 0.4
 		~/.config/lock.sh 
 	elif [[ "$1" == '--opt2' ]]; then
 		confirm_run 'kill -9 -1'

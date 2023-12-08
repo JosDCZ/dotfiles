@@ -1,0 +1,57 @@
+# GENERAL SETTINGS
+# --------border-radius:--------
+set window-title-basename true
+set statusbar-home-tilde  true
+set recolor               true
+set selection-clipboard   clipboard
+set recolor-keephue       "false"
+set font "Inconsolata Condensed Bold 10"
+
+# LAYOUT SETTINGS
+# ---------------
+set show-scrollbars     false
+set statusbar-h-padding 25
+set statusbar-v-padding 7
+set show-scrollbars     false
+map i recolor
+
+
+# NORD THEME
+# ----------
+set default-bg                  "#282c34"
+set default-fg                  "#979eab"
+
+set statusbar-fg                "#979eab"
+set statusbar-bg                "#21252b"
+
+set inputbar-bg                 "#21252b"
+set inputbar-fg                 "#de73ff"
+
+set notification-bg             "#21252b"
+set notification-fg             "#61afef"
+
+set notification-error-bg       "#21252b"
+set notification-error-fg       "#e06b74"
+
+set notification-warning-bg     "#21252b"
+set notification-warning-fg     "#e5c07a"
+
+set highlight-color             "#62aeef"
+set highlight-active-color      "#abb2bf"
+
+set completion-bg               "#21252b"
+set completion-fg               "#979eab"
+
+set completion-highlight-fg     "#abb2bf"
+set completion-highlight-bg     "#24283b"
+
+set recolor-lightcolor          "#282c34"
+set recolor-darkcolor           "#979eab"
+
+set recolor                     "true"
+set recolor-keephue             "false"
+
+
+
+
+

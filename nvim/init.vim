@@ -4,7 +4,18 @@ syntax enable
 set showcmd
 set encoding=utf-8
 set showmatch
-set clipboard+=unnamedplus
+set clipboard=unnamed
+
+let g:clipboard = {
+    \   'copy': {
+    \       '+': ['wl-copy', '--trim-newline'],
+    \       '*': ['wl-copy', '--trim-newline'],
+    \   },
+    \   'paste': {
+    \       '+': ['wl-paste', '--no-newline'],
+    \       '*': ['wl-paste', '--no-newline'],
+    \   },
+    \ }
 
 call plug#begin('~/.vim/plugged')
 
@@ -20,13 +31,13 @@ set termguicolors
 
 syntax on
 
-colorscheme catppuccin-mocha
+colorscheme catppuccin-frappe
 
 " Unicode symbols for the Status Line
-let g:airline_left_alt_sep = "\ue0b5"
-let g:airline_left_sep = "\ue0b4"
-let g:airline_right_alt_sep = "\ue0b7"
-let g:airline_right_sep = "\ue0b6"
+"let g:airline_left_alt_sep = "\ue0b5"
+"let g:airline_left_sep = "\ue0b4"
+"let g:airline_right_alt_sep = "\ue0b7"
+"let g:airline_right_sep = "\ue0b6"
 
 " configuracion de airline
 let g:airline#extensions#tabline#enabled = 1

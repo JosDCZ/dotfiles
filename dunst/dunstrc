@@ -2,19 +2,23 @@
 
 [global]
 monitor = 0
-follow = mouse
+force_xwayland = false
+follow = none
 width = 300
-height = 80
+height = 300
 origin = top-right
-offset = 25x67
-corner_radius = 14
+offset = 25x25
+corner_radius = 0
 scale = 0
-notification_limit = 0
+notification_limit = 20
 progress_bar = true
-progress_bar_height = 80
+progress_bar_height = 5
 progress_bar_frame_width = 1
-progress_bar_min_width = 300
+progress_bar_min_width = 150
 progress_bar_max_width = 300
+progress_bar_corner_radius = 0
+highlight = "#c6a0f6"
+icon_corner_radius = 2
 indicate_hidden = yes
 #transparency = 30
 separator_height = 2
@@ -26,10 +30,10 @@ gap_size = 0
 separator_color = frame
 sort = yes
 idle_threshold = 120
-font = Inconsolata Condensed Bold 11
+font = JetBrainsMono Nerd Font 9
 line_height = 2
 markup = full
-format = "<span font_desc='Inconsolata Condensed Bold 11' foreground='#c6a0f6'>%s</span>\n%b"
+format = "<span font_desc='JetBrainsMono Nerd Font 9' foreground='#c6a0f6'>%s</span>\n%b"
 #format = "<b>%s</b>\n%b"
 alignment = left
 vertical_alignment = center

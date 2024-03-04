@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 #xrandr --output eDP --primary &
-xrandr --output eDP --mode 1920x1080 --rate 60 &
+xrandr --output eDP --mode 1920x1080 --rate 60 --primary &
 
 bspc monitor eDP -d 1 2 3 4 5 6 7 8
 
@@ -77,7 +77,7 @@ for i in ${settings[@]}; do
 
 ## Always Floating Apps
 declare -a floating=(kitty-float MEGAsync mpv \
-Viewnior Gthumb feh Galculator Java dolphin-emu Nemo)
+Viewnior Gthumb feh qalculate-qt Java dolphin-emu Nemo)
 
 for i in ${floating[@]}; do
    bspc rule -a $i state=floating follow=on focus=on; done
@@ -96,14 +96,14 @@ bspc rule -a stalonetray state=floating manage=off
 # Kill if already running
 killall dunst &
 killall redshift-gtk &
-killall xfce4-power-manager &
+# killall xfce4-power-manager &
 
 # Dunst
 dunst -config ~/.config/dunst/dunstrc &
 
 # Compositor
-#picom -b --experimental-backends &
-picom -b --config ~/.config/picom/picombspwm.conf &
+# picom -b --experimental-backends &
+picom -b --config ~/.config/picom/picom.conf &
 
 # Portapapeles
 clipmenud &
@@ -112,13 +112,13 @@ clipmenud &
 wmname LG3D &
 
 # polkit agent
-if [[ ! `pidof polkit-gnome-authentication-agent-1` ]]; then
-	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+if [[ ! `pidof polkit-kde-authentication-agent-1` ]]; then
+	/usr/lib/polkit-kde-authentication-agent-1 &
 fi
 
 # Enable power management
-# xss-lock --transfer-sleep-lock -- /home/josue/.config/lock.sh --nofork &
-xfce4-power-manager &
+xss-lock --transfer-sleep-lock -- /home/josue/.config/lock.sh --nofork &
+# xfce4-power-manager &
 
 # Gestos touchpad
 libinput-gestures-setup start &
@@ -133,14 +133,15 @@ setxkbmap -option grp:rctrl_rshift_toggle us,latam &
 numlockx &
 
 # Restore wallpaper
-nitrogen --restore &
+# nitrogen --restore &
 #ramdomwall /home/josue/Imágenes/Nord/custom 300 &
+feh --bg-fill "/home/josue/Imágenes/Catppuccin/girl1.png"
 
 # Start mpd
 exec mpd &
 
 # Polybar
-~/.config/polybarbspwm/launch.sh &
+~/.config/polybar/launch.sh &
 
 # tray
 # Exclusive apps
@@ -156,6 +157,6 @@ megasync &
 
 #blueman-applet &
 
-~/.config/conky/Alterf/start.sh &
+# ~/.config/conky/Alterf/start.sh &
 
 redshift-gtk &

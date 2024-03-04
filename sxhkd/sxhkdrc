@@ -85,17 +85,19 @@ super + Print
 
 # Brighness control
 XF86MonBrightness{Up,Down}
-	bspbrightness{ --inc, --dec}
+	brightness-helper{ --inc, --dec}
 	#light {-A,-U} 5
 	
 # Speaker Volume control
 XF86Audio{RaiseVolume,LowerVolume}
-	bspvolume{ --inc, --dec}
+	volume-helper --limit {"$volume_limit" --increase "$volume_step","$volume_limit" --decrease "$volume_step"}
+	#bspvolume{ --inc, --dec}
 	#amixer -D pulse sset Master {5%+, 5%-}
 
 # Mic Volume control
 XF86AudioMute
-	bspvolume --toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle && volume-helper
+	#bspvolume --toggle
 	#pulsemixer --toggle-mute
 	
 # Music control

@@ -1,0 +1,52 @@
+# settings
+ignore-empty-password
+
+# Font
+font=JetBrains Mono Nerd Font
+font-size=20
+
+# theming
+indicator-caps-lock
+
+# smaller indicator
+indicator-thickness=20
+indicator-radius=100
+
+# bg
+image=/home/josue/Imágenes/Catppuccin/girl2.png
+scaling=center
+color=161821a0
+
+# Define all colors
+
+key-hl-color=c6a0f6
+separator-color=303446
+
+inside-color=24273a
+inside-clear-color=24273a
+inside-caps-lock-color=24273a
+inside-ver-color=24273a
+inside-wrong-color=24273a
+
+ring-color=494d64
+ring-clear-color=f5a97f
+ring-caps-lock-color=8aadf4
+ring-ver-color=a6da95
+ring-wrong-color=ed8796
+
+line-color=24273a00
+line-clear-color=24273a00
+line-caps-lock-color=24273a00
+line-ver-color=24273a00
+line-wrong-color=24273a00
+
+text-color=c6a0f6
+text-clear-color=c6a0f6
+text-ver-color=c6a0f6
+text-wrong-color=c6a0f6
+
+bs-hl-color=c6a0f6
+caps-lock-key-hl-color=ffffffFF
+caps-lock-bs-hl-color=ffffffFF
+disable-caps-lock-text
+text-caps-lock-color=c6a0f6

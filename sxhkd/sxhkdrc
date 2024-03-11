@@ -45,11 +45,11 @@ super + b
 
 # Launch Apps
 super + shift + {f,w,e,p,c,t,m}
-	{nemo,firefox,gsimplecal,gpick,galculator,thunderbird,kitty --class 'kitty-float' --config ~/.config/kitty/kittymusic.conf -e ncmpcpp-ueberzug}
+	{nemo,firefox-developer-edition,kitty --class 'kitty-float' --config ~/.config/kitty/kittyfloat.conf -e calcurse,gpick,qalculate-gtk,thunderbird,kitty --class 'kitty-float' --config ~/.config/kitty/kittymusic.conf -e ncmpcpp-ueberzug}
 
 # Terminal Apps
 ctrl + alt + {v,h}
-	kitty -e {nvim,btop}
+	kitty -e {vim,btop}
 
 # Color Picker
 super + o

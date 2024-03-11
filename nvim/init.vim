@@ -4,18 +4,35 @@ syntax enable
 set showcmd
 set encoding=utf-8
 set showmatch
-set clipboard=unnamed
+set clipboard+=unnamed,unnamedplus
 
-let g:clipboard = {
-    \   'copy': {
-    \       '+': ['wl-copy', '--trim-newline'],
-    \       '*': ['wl-copy', '--trim-newline'],
-    \   },
-    \   'paste': {
-    \       '+': ['wl-paste', '--no-newline'],
-    \       '*': ['wl-paste', '--no-newline'],
-    \   },
-    \ }
+if !empty($WAYLAND_DISPLAY)
+    let g:clipboard = {
+        \ 'name': 'wayland',
+        \ 'copy': {
+        \     '+': ['wl-copy', '--trim-newline'],
+        \     '*': ['wl-copy', '--trim-newline'],
+        \ },
+        \ 'paste': {
+        \     '+': ['wl-paste', '--no-newline'],
+        \     '*': ['wl-paste', '--no-newline'],
+        \ },
+        \ 'cache_enabled': 1
+        \ }
+else
+    let g:clipboard = {
+        \ 'name': 'xsel',
+        \ 'copy': {
+        \     '+': 'xsel -ib',
+        \     '*': 'xsel -ib'
+        \ },
+        \ 'paste': {
+        \     '+': 'xsel -ob',
+        \     '*': 'xsel -ob'
+        \ },
+        \ 'cache_enabled': 1
+        \ }
+endif
 
 call plug#begin('~/.vim/plugged')
 
@@ -34,10 +51,10 @@ syntax on
 colorscheme catppuccin-frappe
 
 " Unicode symbols for the Status Line
-"let g:airline_left_alt_sep = "\ue0b5"
-"let g:airline_left_sep = "\ue0b4"
-"let g:airline_right_alt_sep = "\ue0b7"
-"let g:airline_right_sep = "\ue0b6"
+let g:airline_left_alt_sep = "\ue0b5"
+let g:airline_left_sep = "\ue0b4"
+let g:airline_right_alt_sep = "\ue0b7"
+let g:airline_right_sep = "\ue0b6"
 
 " configuracion de airline
 let g:airline#extensions#tabline#enabled = 1

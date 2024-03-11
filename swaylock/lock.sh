@@ -1,16 +1,16 @@
 swaylock --clock --screenshots --indicator-idle-visible \
 	--indicator-radius 100 \
 	--indicator-thickness 10 \
-	--ring-color 45475a \
-	--ring-clear-color fab38788 \
-	--ring-caps-lock-color 89b4fa88 \
-	--ring-ver-color a6e3a188 \
+	--ring-color b5bfe2 \
+	--ring-clear-color ef9f7688 \
+	--ring-caps-lock-color 8caaee88 \
+	--ring-ver-color a6d18988 \
 	--ring-wrong-color f38ba888 \
-	--key-hl-color cba6f7 \
-	--text-color f9e2af \
-	--text-clear-color f9e2af \
-	--text-ver-color f9e2af \
-	--text-wrong-color f9e2af \
+	--key-hl-color ca9ee6 \
+	--text-color e5c890 \
+	--text-clear-color e5c890 \
+	--text-ver-color e5c890 \
+	--text-wrong-color e5c890 \
 	--line-color 00000000 \
 	--line-clear-color 00000000 \
 	--line-caps-lock-color 00000000 \
